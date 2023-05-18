@@ -25,9 +25,10 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: no-repeat url(/images/bg-pattern-top.svg) top -45rem left -36rem/100%,no-repeat url(/images/bg-pattern-bottom.svg) bottom -50rem right -34rem/100% var(--clr-dark-cyan);
     /* background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat; */
-    background-color: var(--clr-dark-cyan);
+    /* background-color: var(--clr-dark-cyan); */
 }
 
 .card{
@@ -84,4 +85,9 @@ body{
 h4{
   margin-bottom: 2px;
 }
-
+/* mobile screen starts */
+@media screen and (max-width:375px){
+  body{
+    background: no-repeat url(images/bg-pattern-top.svg) top -10rem left -10rem/100%,no-repeat url(images/bg-pattern-bottom.svg) bottom -10rem right -10rem/100% var(--clr-dark-cyan);
+  }
+}
